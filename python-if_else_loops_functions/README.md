@@ -5,4 +5,4 @@ Task2-Prints the ASCII alphabet in lowercase.
 Task3-Prints the alphabet in lowercase except for 'q' and 'e'.
 Task4-Prints numbers from 0 to 98 in decimal and hexadecimal.
 Task5-Prints numbers from 0 to 99 separated by a comma and space.
-
+Task6-Prints all possible different combinations of two digits.
