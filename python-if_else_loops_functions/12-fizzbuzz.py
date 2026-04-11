@@ -10,7 +10,6 @@ def fizzbuzz():
         else:
             print("{}".format(i), end="")
         
-        if i < 100:
-            print(" ", end="")
-        else:
-            print("", end="")
+        print(" ", end="")
+    # Bütün dövr bitəndən sonra yeni sətirə keçmək üçün:
+    print("")
