@@ -41,7 +41,6 @@ def get_user(username):
 @app.route("/add_user", methods=["POST"])
 def add_user():
     """Handles POST requests to add a new user."""
-    # JSON-un valid olub-olmadığını yoxlayırıq
     data = request.get_json(silent=True)
     if data is None:
         return jsonify({"error": "Invalid JSON"}), 400
@@ -51,9 +50,9 @@ def add_user():
         return jsonify({"error": "Username is required"}), 400
 
     if username in users:
-        return jsonify({"error": "User already exists"}), 400
+        # 409 Conflict status kodu təkrarlanan data üçün vacibdir
+        return jsonify({"error": "Username already exists"}), 409
 
-    # Useri lüğətə əlavə edirik
     users[username] = data
     return jsonify({
         "message": "User added",
