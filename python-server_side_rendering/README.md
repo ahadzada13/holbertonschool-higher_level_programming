@@ -1,0 +1,1 @@
+This project focuses on the fundamentals of server-side rendering, starting with basic string templating and file operations. The goal is to process a list of attendees and generate personalized invitation files based on a predefined template.
